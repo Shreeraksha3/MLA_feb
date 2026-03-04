@@ -8,7 +8,7 @@
 </head>
 <body>
 	<h1 align="center">:: Employee Data ::</h1>
-	<jsp:useBean id="emp" class="com.test.Employee"><!-- used to create object for the clasess --><!-- equivalent to employee emp=new employee-->
+	<jsp:useBean id="emp" class="com.test.controller.Employee"><!-- used to create object for the clasess --><!-- equivalent to employee emp=new employee-->
 	</jsp:useBean>
 	<center>
 	<jsp:setProperty property="*" name="emp"/><!-- * means for every method-->

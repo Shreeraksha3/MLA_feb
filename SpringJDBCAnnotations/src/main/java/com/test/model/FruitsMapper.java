@@ -16,7 +16,7 @@ public class FruitsMapper implements RowMapper<Fruits>{
 		fruits.setPrice(rs.getInt("f_price"));
 		fruits.setQuantity(rs.getInt("f_quantity"));
 		
-		return fruits;
+		return fruit;
 	}
 	
 }

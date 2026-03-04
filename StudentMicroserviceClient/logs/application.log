@@ -1,0 +1,252 @@
+2026-03-04T16:09:41.734+05:30  INFO 6524 --- [SpringBootRestAPI] [restartedMain] c.t.StudentMicroserviceClientApplication : Starting StudentMicroserviceClientApplication using Java 25.0.1 with PID 6524 (C:\Users\shreeraksha.h\Desktop\MLA-JAVA\StudentMicroserviceClient\target\classes started by shreeraksha.h in C:\Users\shreeraksha.h\Desktop\MLA-JAVA\StudentMicroserviceClient)
+2026-03-04T16:09:41.738+05:30  INFO 6524 --- [SpringBootRestAPI] [restartedMain] c.t.StudentMicroserviceClientApplication : No active profile set, falling back to 1 default profile: "default"
+2026-03-04T16:09:41.850+05:30  INFO 6524 --- [SpringBootRestAPI] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-03-04T16:09:41.851+05:30  INFO 6524 --- [SpringBootRestAPI] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-03-04T16:09:43.168+05:30  INFO 6524 --- [SpringBootRestAPI] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-04T16:09:43.307+05:30  INFO 6524 --- [SpringBootRestAPI] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 129 ms. Found 1 JPA repository interface.
+2026-03-04T16:09:43.690+05:30  INFO 6524 --- [SpringBootRestAPI] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=31c9d575-e508-3532-a313-37156d206d2a
+2026-03-04T16:09:44.181+05:30  INFO 6524 --- [SpringBootRestAPI] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 7788 (http)
+2026-03-04T16:09:44.194+05:30  INFO 6524 --- [SpringBootRestAPI] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-04T16:09:44.194+05:30  INFO 6524 --- [SpringBootRestAPI] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-03-04T16:09:44.312+05:30  INFO 6524 --- [SpringBootRestAPI] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2461 ms
+2026-03-04T16:09:45.002+05:30  INFO 6524 --- [SpringBootRestAPI] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-03-04T16:09:45.120+05:30  INFO 6524 --- [SpringBootRestAPI] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.4.Final
+2026-03-04T16:09:46.587+05:30  INFO 6524 --- [SpringBootRestAPI] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-04T16:09:46.691+05:30  INFO 6524 --- [SpringBootRestAPI] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-04T16:09:47.579+05:30  INFO 6524 --- [SpringBootRestAPI] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@53ef0448
+2026-03-04T16:09:47.581+05:30  INFO 6524 --- [SpringBootRestAPI] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-04T16:09:47.667+05:30  WARN 6524 --- [SpringBootRestAPI] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-04T16:09:47.695+05:30  INFO 6524 --- [SpringBootRestAPI] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/mlafeb]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.42
+	Default catalog/schema: mlafeb/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-04T16:09:49.320+05:30  INFO 6524 --- [SpringBootRestAPI] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-04T16:09:49.833+05:30 DEBUG 6524 --- [SpringBootRestAPI] [restartedMain] org.hibernate.SQL                        : create table student (std_id integer not null, std_college varchar(255), std_name varchar(255), primary key (std_id)) engine=InnoDB
+2026-03-04T16:09:50.603+05:30 DEBUG 6524 --- [SpringBootRestAPI] [restartedMain] org.hibernate.SQL                        : create table student_seq (next_val bigint) engine=InnoDB
+2026-03-04T16:09:50.679+05:30 DEBUG 6524 --- [SpringBootRestAPI] [restartedMain] org.hibernate.SQL                        : insert into student_seq ( next_val ) values ( 1 )
+2026-03-04T16:09:50.765+05:30  INFO 6524 --- [SpringBootRestAPI] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-04T16:09:51.036+05:30  INFO 6524 --- [SpringBootRestAPI] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-03-04T16:09:51.389+05:30  WARN 6524 --- [SpringBootRestAPI] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-04T16:09:51.444+05:30  INFO 6524 --- [SpringBootRestAPI] [restartedMain] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-03-04T16:09:52.789+05:30  INFO 6524 --- [SpringBootRestAPI] [restartedMain] o.s.b.h.a.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/mlafeb'
+2026-03-04T16:09:53.072+05:30  INFO 6524 --- [SpringBootRestAPI] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestClient.
+2026-03-04T16:09:53.099+05:30  WARN 6524 --- [SpringBootRestAPI] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-03-04T16:09:53.173+05:30  INFO 6524 --- [SpringBootRestAPI] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoints beneath base path '/actuator'
+2026-03-04T16:09:53.500+05:30  INFO 6524 --- [SpringBootRestAPI] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-03-04T16:09:53.521+05:30  INFO 6524 --- [SpringBootRestAPI] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-03-04T16:09:53.524+05:30  INFO 6524 --- [SpringBootRestAPI] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-03-04T16:09:53.532+05:30  INFO 6524 --- [SpringBootRestAPI] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-03-04T16:09:53.532+05:30  INFO 6524 --- [SpringBootRestAPI] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-03-04T16:09:53.532+05:30  INFO 6524 --- [SpringBootRestAPI] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-03-04T16:09:53.533+05:30  INFO 6524 --- [SpringBootRestAPI] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-03-04T16:09:53.533+05:30  INFO 6524 --- [SpringBootRestAPI] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-03-04T16:09:53.533+05:30  INFO 6524 --- [SpringBootRestAPI] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-03-04T16:09:53.533+05:30  INFO 6524 --- [SpringBootRestAPI] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-03-04T16:09:54.533+05:30  INFO 6524 --- [SpringBootRestAPI] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-03-04T16:09:54.535+05:30  INFO 6524 --- [SpringBootRestAPI] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-03-04T16:09:54.538+05:30  INFO 6524 --- [SpringBootRestAPI] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-03-04T16:09:54.541+05:30  INFO 6524 --- [SpringBootRestAPI] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1772620794540 with initial instances count: 0
+2026-03-04T16:09:54.545+05:30  INFO 6524 --- [SpringBootRestAPI] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application SPRINGBOOTRESTAPI with eureka with status UP
+2026-03-04T16:09:54.547+05:30  INFO 6524 --- [SpringBootRestAPI] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1772620794547, current=UP, previous=STARTING]
+2026-03-04T16:09:54.549+05:30  INFO 6524 --- [SpringBootRestAPI] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SPRINGBOOTRESTAPI/WKSBAN22BTR0007.corp.mphasis.com:SpringBootRestAPI:7788: registering service...
+2026-03-04T16:09:54.651+05:30  INFO 6524 --- [SpringBootRestAPI] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 7788 (http) with context path '/'
+2026-03-04T16:09:54.652+05:30  INFO 6524 --- [SpringBootRestAPI] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 7788
+2026-03-04T16:09:54.665+05:30  INFO 6524 --- [SpringBootRestAPI] [restartedMain] c.t.StudentMicroserviceClientApplication : Started StudentMicroserviceClientApplication in 13.417 seconds (process running for 14.681)
+2026-03-04T16:09:54.888+05:30  INFO 6524 --- [SpringBootRestAPI] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SPRINGBOOTRESTAPI/WKSBAN22BTR0007.corp.mphasis.com:SpringBootRestAPI:7788 - registration status: 204
+2026-03-04T16:09:55.022+05:30  INFO 6524 --- [SpringBootRestAPI] [RMI TCP Connection(4)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-04T16:09:55.022+05:30  INFO 6524 --- [SpringBootRestAPI] [RMI TCP Connection(4)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-04T16:09:55.023+05:30  INFO 6524 --- [SpringBootRestAPI] [RMI TCP Connection(4)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-03-04T16:10:24.536+05:30  INFO 6524 --- [SpringBootRestAPI] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-03-04T16:10:24.536+05:30  INFO 6524 --- [SpringBootRestAPI] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-03-04T16:10:24.537+05:30  INFO 6524 --- [SpringBootRestAPI] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-03-04T16:10:24.537+05:30  INFO 6524 --- [SpringBootRestAPI] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-03-04T16:10:24.537+05:30  INFO 6524 --- [SpringBootRestAPI] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-03-04T16:10:24.537+05:30  INFO 6524 --- [SpringBootRestAPI] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2026-03-04T16:10:24.537+05:30  INFO 6524 --- [SpringBootRestAPI] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-03-04T16:10:24.564+05:30  INFO 6524 --- [SpringBootRestAPI] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-03-04T16:14:53.547+05:30  INFO 6524 --- [SpringBootRestAPI] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-03-04T16:19:53.555+05:30  INFO 6524 --- [SpringBootRestAPI] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-03-04T16:24:53.554+05:30  INFO 6524 --- [SpringBootRestAPI] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-03-04T16:29:53.569+05:30  INFO 6524 --- [SpringBootRestAPI] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-03-04T16:34:53.573+05:30  INFO 6524 --- [SpringBootRestAPI] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-03-04T16:35:54.636+05:30  INFO 6524 --- [SpringBootRestAPI] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 4 class path changes (0 additions, 1 deletion, 3 modifications)
+2026-03-04T16:35:54.640+05:30  INFO 6524 --- [SpringBootRestAPI] [Thread-1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application SPRINGBOOTRESTAPI with eureka with status DOWN
+2026-03-04T16:35:54.641+05:30  INFO 6524 --- [SpringBootRestAPI] [Thread-1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1772622354641, current=DOWN, previous=UP]
+2026-03-04T16:35:54.641+05:30  INFO 6524 --- [SpringBootRestAPI] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SPRINGBOOTRESTAPI/WKSBAN22BTR0007.corp.mphasis.com:SpringBootRestAPI:7788: registering service...
+2026-03-04T16:35:54.645+05:30  INFO 6524 --- [SpringBootRestAPI] [Thread-1] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-04T16:35:54.653+05:30  INFO 6524 --- [SpringBootRestAPI] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-03-04T16:35:54.663+05:30  INFO 6524 --- [SpringBootRestAPI] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SPRINGBOOTRESTAPI/WKSBAN22BTR0007.corp.mphasis.com:SpringBootRestAPI:7788 - registration status: 204
+2026-03-04T16:35:54.680+05:30  INFO 6524 --- [SpringBootRestAPI] [Thread-1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-04T16:35:54.688+05:30  INFO 6524 --- [SpringBootRestAPI] [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-03-04T16:35:54.694+05:30  INFO 6524 --- [SpringBootRestAPI] [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-03-04T16:35:54.695+05:30  INFO 6524 --- [SpringBootRestAPI] [Thread-1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2026-03-04T16:35:57.696+05:30  WARN 6524 --- [SpringBootRestAPI] [DiscoveryClient-%d] c.netflix.discovery.TimedSupervisorTask  : task supervisor shutting down, can't accept the task
+2026-03-04T16:35:57.696+05:30  INFO 6524 --- [SpringBootRestAPI] [Thread-1] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2026-03-04T16:35:57.947+05:30  INFO 6524 --- [SpringBootRestAPI] [Thread-1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SPRINGBOOTRESTAPI/WKSBAN22BTR0007.corp.mphasis.com:SpringBootRestAPI:7788 - deregister  status: 200
+2026-03-04T16:35:57.947+05:30  INFO 6524 --- [SpringBootRestAPI] [Thread-1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2026-03-04T16:35:58.297+05:30  INFO 6524 --- [SpringBootRestAPI] [restartedMain] c.t.StudentMicroserviceClientApplication : Starting StudentMicroserviceClientApplication using Java 25.0.1 with PID 6524 (C:\Users\shreeraksha.h\Desktop\MLA-JAVA\StudentMicroserviceClient\target\classes started by shreeraksha.h in C:\Users\shreeraksha.h\Desktop\MLA-JAVA\StudentMicroserviceClient)
+2026-03-04T16:35:58.298+05:30  INFO 6524 --- [SpringBootRestAPI] [restartedMain] c.t.StudentMicroserviceClientApplication : No active profile set, falling back to 1 default profile: "default"
+2026-03-04T16:35:59.802+05:30  INFO 6524 --- [SpringBootRestAPI] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-04T16:35:59.829+05:30  INFO 6524 --- [SpringBootRestAPI] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23 ms. Found 1 JPA repository interface.
+2026-03-04T16:36:00.030+05:30  INFO 6524 --- [SpringBootRestAPI] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=31c9d575-e508-3532-a313-37156d206d2a
+2026-03-04T16:36:00.227+05:30  INFO 6524 --- [SpringBootRestAPI] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 7788 (http)
+2026-03-04T16:36:00.229+05:30  INFO 6524 --- [SpringBootRestAPI] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-04T16:36:00.229+05:30  INFO 6524 --- [SpringBootRestAPI] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-03-04T16:36:00.369+05:30  INFO 6524 --- [SpringBootRestAPI] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2068 ms
+2026-03-04T16:36:00.486+05:30  INFO 6524 --- [SpringBootRestAPI] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-03-04T16:36:00.663+05:30  INFO 6524 --- [SpringBootRestAPI] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-04T16:36:00.668+05:30  INFO 6524 --- [SpringBootRestAPI] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2026-03-04T16:36:00.746+05:30  INFO 6524 --- [SpringBootRestAPI] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6f75f420
+2026-03-04T16:36:00.746+05:30  INFO 6524 --- [SpringBootRestAPI] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2026-03-04T16:36:00.752+05:30  WARN 6524 --- [SpringBootRestAPI] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-04T16:36:00.753+05:30  INFO 6524 --- [SpringBootRestAPI] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/mlafeb]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.42
+	Default catalog/schema: mlafeb/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-04T16:36:00.886+05:30  INFO 6524 --- [SpringBootRestAPI] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-04T16:36:00.927+05:30  INFO 6524 --- [SpringBootRestAPI] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-04T16:36:01.106+05:30  WARN 6524 --- [SpringBootRestAPI] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-04T16:36:01.125+05:30  INFO 6524 --- [SpringBootRestAPI] [restartedMain] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-03-04T16:36:01.365+05:30  INFO 6524 --- [SpringBootRestAPI] [restartedMain] o.s.b.h.a.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/mlafeb'
+2026-03-04T16:36:01.407+05:30  INFO 6524 --- [SpringBootRestAPI] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestClient.
+2026-03-04T16:36:01.418+05:30  WARN 6524 --- [SpringBootRestAPI] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-03-04T16:36:01.425+05:30  INFO 6524 --- [SpringBootRestAPI] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoints beneath base path '/actuator'
+2026-03-04T16:36:01.471+05:30  INFO 6524 --- [SpringBootRestAPI] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-03-04T16:36:01.474+05:30  INFO 6524 --- [SpringBootRestAPI] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-03-04T16:36:01.474+05:30  INFO 6524 --- [SpringBootRestAPI] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-03-04T16:36:01.475+05:30  INFO 6524 --- [SpringBootRestAPI] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-03-04T16:36:01.475+05:30  INFO 6524 --- [SpringBootRestAPI] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-03-04T16:36:01.475+05:30  INFO 6524 --- [SpringBootRestAPI] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-03-04T16:36:01.475+05:30  INFO 6524 --- [SpringBootRestAPI] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-03-04T16:36:01.475+05:30  INFO 6524 --- [SpringBootRestAPI] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-03-04T16:36:01.475+05:30  INFO 6524 --- [SpringBootRestAPI] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-03-04T16:36:01.475+05:30  INFO 6524 --- [SpringBootRestAPI] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-03-04T16:36:01.490+05:30  INFO 6524 --- [SpringBootRestAPI] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-03-04T16:36:01.490+05:30  INFO 6524 --- [SpringBootRestAPI] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-03-04T16:36:01.490+05:30  INFO 6524 --- [SpringBootRestAPI] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-03-04T16:36:01.491+05:30  INFO 6524 --- [SpringBootRestAPI] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1772622361491 with initial instances count: 0
+2026-03-04T16:36:01.537+05:30  INFO 6524 --- [SpringBootRestAPI] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application SPRINGBOOTRESTAPI with eureka with status UP
+2026-03-04T16:36:01.538+05:30  INFO 6524 --- [SpringBootRestAPI] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1772622361538, current=UP, previous=STARTING]
+2026-03-04T16:36:01.540+05:30  INFO 6524 --- [SpringBootRestAPI] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SPRINGBOOTRESTAPI/WKSBAN22BTR0007.corp.mphasis.com:SpringBootRestAPI:7788: registering service...
+2026-03-04T16:36:01.558+05:30  INFO 6524 --- [SpringBootRestAPI] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 7788 (http) with context path '/'
+2026-03-04T16:36:01.559+05:30  INFO 6524 --- [SpringBootRestAPI] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 7788
+2026-03-04T16:36:01.567+05:30  INFO 6524 --- [SpringBootRestAPI] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SPRINGBOOTRESTAPI/WKSBAN22BTR0007.corp.mphasis.com:SpringBootRestAPI:7788 - registration status: 204
+2026-03-04T16:36:01.570+05:30  INFO 6524 --- [SpringBootRestAPI] [restartedMain] c.t.StudentMicroserviceClientApplication : Started StudentMicroserviceClientApplication in 3.333 seconds (process running for 1581.594)
+2026-03-04T16:36:01.572+05:30  INFO 6524 --- [SpringBootRestAPI] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-03-04T16:36:01.826+05:30  INFO 6524 --- [SpringBootRestAPI] [RMI TCP Connection(32)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2026-03-04T16:36:01.826+05:30  INFO 6524 --- [SpringBootRestAPI] [RMI TCP Connection(32)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application SPRINGBOOTRESTAPI with eureka with status DOWN
+2026-03-04T16:36:01.827+05:30  INFO 6524 --- [SpringBootRestAPI] [RMI TCP Connection(32)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1772622361827, current=DOWN, previous=UP]
+2026-03-04T16:36:01.827+05:30  INFO 6524 --- [SpringBootRestAPI] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SPRINGBOOTRESTAPI/WKSBAN22BTR0007.corp.mphasis.com:SpringBootRestAPI:7788: registering service...
+2026-03-04T16:36:01.827+05:30  INFO 6524 --- [SpringBootRestAPI] [RMI TCP Connection(32)-127.0.0.1] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-04T16:36:01.831+05:30  INFO 6524 --- [SpringBootRestAPI] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SPRINGBOOTRESTAPI/WKSBAN22BTR0007.corp.mphasis.com:SpringBootRestAPI:7788 - registration status: 204
+2026-03-04T16:36:01.832+05:30  INFO 6524 --- [SpringBootRestAPI] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-03-04T16:36:01.835+05:30  INFO 6524 --- [SpringBootRestAPI] [RMI TCP Connection(32)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-04T16:36:01.836+05:30  INFO 6524 --- [SpringBootRestAPI] [RMI TCP Connection(32)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2026-03-04T16:36:01.839+05:30  INFO 6524 --- [SpringBootRestAPI] [RMI TCP Connection(32)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2026-03-04T16:36:01.840+05:30  INFO 6524 --- [SpringBootRestAPI] [RMI TCP Connection(32)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2026-03-04T16:36:04.840+05:30  INFO 6524 --- [SpringBootRestAPI] [RMI TCP Connection(32)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2026-03-04T16:36:04.845+05:30  INFO 6524 --- [SpringBootRestAPI] [RMI TCP Connection(32)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SPRINGBOOTRESTAPI/WKSBAN22BTR0007.corp.mphasis.com:SpringBootRestAPI:7788 - deregister  status: 200
+2026-03-04T16:36:04.845+05:30  INFO 6524 --- [SpringBootRestAPI] [RMI TCP Connection(32)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2026-03-04T16:39:02.576+05:30  INFO 29088 --- [SpringBootRestAPI] [restartedMain] c.t.StudentMicroserviceClientApplication : Starting StudentMicroserviceClientApplication using Java 25.0.1 with PID 29088 (C:\Users\shreeraksha.h\Desktop\MLA-JAVA\StudentMicroserviceClient\target\classes started by shreeraksha.h in C:\Users\shreeraksha.h\Desktop\MLA-JAVA\StudentMicroserviceClient)
+2026-03-04T16:39:02.579+05:30  INFO 29088 --- [SpringBootRestAPI] [restartedMain] c.t.StudentMicroserviceClientApplication : No active profile set, falling back to 1 default profile: "default"
+2026-03-04T16:39:02.623+05:30  INFO 29088 --- [SpringBootRestAPI] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-03-04T16:39:02.624+05:30  INFO 29088 --- [SpringBootRestAPI] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-03-04T16:39:03.853+05:30  INFO 29088 --- [SpringBootRestAPI] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-04T16:39:04.005+05:30  INFO 29088 --- [SpringBootRestAPI] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 140 ms. Found 1 JPA repository interface.
+2026-03-04T16:39:04.319+05:30  INFO 29088 --- [SpringBootRestAPI] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=31c9d575-e508-3532-a313-37156d206d2a
+2026-03-04T16:39:04.720+05:30  INFO 29088 --- [SpringBootRestAPI] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 7788 (http)
+2026-03-04T16:39:04.732+05:30  INFO 29088 --- [SpringBootRestAPI] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-04T16:39:04.732+05:30  INFO 29088 --- [SpringBootRestAPI] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-03-04T16:39:04.816+05:30  INFO 29088 --- [SpringBootRestAPI] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2192 ms
+2026-03-04T16:39:05.107+05:30  INFO 29088 --- [SpringBootRestAPI] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-03-04T16:39:05.168+05:30  INFO 29088 --- [SpringBootRestAPI] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.4.Final
+2026-03-04T16:39:05.684+05:30  INFO 29088 --- [SpringBootRestAPI] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-04T16:39:05.720+05:30  INFO 29088 --- [SpringBootRestAPI] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-04T16:39:06.062+05:30  INFO 29088 --- [SpringBootRestAPI] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6a7c4a9e
+2026-03-04T16:39:06.065+05:30  INFO 29088 --- [SpringBootRestAPI] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-04T16:39:06.144+05:30  WARN 29088 --- [SpringBootRestAPI] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-04T16:39:06.164+05:30  INFO 29088 --- [SpringBootRestAPI] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/mlafeb]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.42
+	Default catalog/schema: mlafeb/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-04T16:39:07.331+05:30  INFO 29088 --- [SpringBootRestAPI] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-04T16:39:07.414+05:30  INFO 29088 --- [SpringBootRestAPI] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-04T16:39:07.516+05:30  INFO 29088 --- [SpringBootRestAPI] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-03-04T16:39:07.701+05:30  WARN 29088 --- [SpringBootRestAPI] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-04T16:39:07.742+05:30  INFO 29088 --- [SpringBootRestAPI] [restartedMain] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-03-04T16:39:08.296+05:30  INFO 29088 --- [SpringBootRestAPI] [restartedMain] o.s.b.h.a.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/mlafeb'
+2026-03-04T16:39:08.384+05:30  INFO 29088 --- [SpringBootRestAPI] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestClient.
+2026-03-04T16:39:08.412+05:30  WARN 29088 --- [SpringBootRestAPI] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-03-04T16:39:08.431+05:30  INFO 29088 --- [SpringBootRestAPI] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoints beneath base path '/actuator'
+2026-03-04T16:39:08.516+05:30  INFO 29088 --- [SpringBootRestAPI] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-03-04T16:39:08.536+05:30  INFO 29088 --- [SpringBootRestAPI] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-03-04T16:39:08.539+05:30  INFO 29088 --- [SpringBootRestAPI] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-03-04T16:39:08.546+05:30  INFO 29088 --- [SpringBootRestAPI] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-03-04T16:39:08.547+05:30  INFO 29088 --- [SpringBootRestAPI] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-03-04T16:39:08.547+05:30  INFO 29088 --- [SpringBootRestAPI] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-03-04T16:39:08.547+05:30  INFO 29088 --- [SpringBootRestAPI] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-03-04T16:39:08.547+05:30  INFO 29088 --- [SpringBootRestAPI] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-03-04T16:39:08.547+05:30  INFO 29088 --- [SpringBootRestAPI] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-03-04T16:39:08.547+05:30  INFO 29088 --- [SpringBootRestAPI] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-03-04T16:39:08.927+05:30  INFO 29088 --- [SpringBootRestAPI] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-03-04T16:39:08.928+05:30  INFO 29088 --- [SpringBootRestAPI] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-03-04T16:39:08.930+05:30  INFO 29088 --- [SpringBootRestAPI] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-03-04T16:39:08.933+05:30  INFO 29088 --- [SpringBootRestAPI] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1772622548933 with initial instances count: 0
+2026-03-04T16:39:08.936+05:30  INFO 29088 --- [SpringBootRestAPI] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application SPRINGBOOTRESTAPI with eureka with status UP
+2026-03-04T16:39:08.936+05:30  INFO 29088 --- [SpringBootRestAPI] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1772622548936, current=UP, previous=STARTING]
+2026-03-04T16:39:08.938+05:30  INFO 29088 --- [SpringBootRestAPI] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SPRINGBOOTRESTAPI/WKSBAN22BTR0007.corp.mphasis.com:SpringBootRestAPI:7788: registering service...
+2026-03-04T16:39:08.962+05:30  INFO 29088 --- [SpringBootRestAPI] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 7788 (http) with context path '/'
+2026-03-04T16:39:08.963+05:30  INFO 29088 --- [SpringBootRestAPI] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 7788
+2026-03-04T16:39:08.974+05:30  INFO 29088 --- [SpringBootRestAPI] [restartedMain] c.t.StudentMicroserviceClientApplication : Started StudentMicroserviceClientApplication in 6.788 seconds (process running for 7.992)
+2026-03-04T16:39:09.046+05:30  INFO 29088 --- [SpringBootRestAPI] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SPRINGBOOTRESTAPI/WKSBAN22BTR0007.corp.mphasis.com:SpringBootRestAPI:7788 - registration status: 204
+2026-03-04T16:39:09.439+05:30  INFO 29088 --- [SpringBootRestAPI] [RMI TCP Connection(4)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-04T16:39:09.440+05:30  INFO 29088 --- [SpringBootRestAPI] [RMI TCP Connection(4)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-04T16:39:09.442+05:30  INFO 29088 --- [SpringBootRestAPI] [RMI TCP Connection(4)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-03-04T16:39:38.936+05:30  INFO 29088 --- [SpringBootRestAPI] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-03-04T16:39:38.937+05:30  INFO 29088 --- [SpringBootRestAPI] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-03-04T16:39:38.938+05:30  INFO 29088 --- [SpringBootRestAPI] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-03-04T16:39:38.938+05:30  INFO 29088 --- [SpringBootRestAPI] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-03-04T16:39:38.939+05:30  INFO 29088 --- [SpringBootRestAPI] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-03-04T16:39:38.939+05:30  INFO 29088 --- [SpringBootRestAPI] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2026-03-04T16:39:38.939+05:30  INFO 29088 --- [SpringBootRestAPI] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-03-04T16:39:38.965+05:30  INFO 29088 --- [SpringBootRestAPI] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-03-04T16:44:08.550+05:30  INFO 29088 --- [SpringBootRestAPI] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-03-04T16:49:08.552+05:30  INFO 29088 --- [SpringBootRestAPI] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-03-04T16:50:45.107+05:30  INFO 29088 --- [SpringBootRestAPI] [RMI TCP Connection(17)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2026-03-04T16:50:45.110+05:30  INFO 29088 --- [SpringBootRestAPI] [RMI TCP Connection(17)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application SPRINGBOOTRESTAPI with eureka with status DOWN
+2026-03-04T16:50:45.110+05:30  INFO 29088 --- [SpringBootRestAPI] [RMI TCP Connection(17)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1772623245110, current=DOWN, previous=UP]
+2026-03-04T16:50:45.110+05:30  INFO 29088 --- [SpringBootRestAPI] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SPRINGBOOTRESTAPI/WKSBAN22BTR0007.corp.mphasis.com:SpringBootRestAPI:7788: registering service...
+2026-03-04T16:50:45.123+05:30  INFO 29088 --- [SpringBootRestAPI] [RMI TCP Connection(17)-127.0.0.1] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-04T16:50:45.133+05:30  INFO 29088 --- [SpringBootRestAPI] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-03-04T16:50:45.152+05:30  INFO 29088 --- [SpringBootRestAPI] [RMI TCP Connection(17)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-04T16:50:45.164+05:30  INFO 29088 --- [SpringBootRestAPI] [RMI TCP Connection(17)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-03-04T16:50:45.189+05:30  INFO 29088 --- [SpringBootRestAPI] [RMI TCP Connection(17)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-03-04T16:50:45.189+05:30  INFO 29088 --- [SpringBootRestAPI] [RMI TCP Connection(17)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2026-03-04T16:50:45.247+05:30  INFO 29088 --- [SpringBootRestAPI] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SPRINGBOOTRESTAPI/WKSBAN22BTR0007.corp.mphasis.com:SpringBootRestAPI:7788 - registration status: 204
+2026-03-04T16:50:45.247+05:30  INFO 29088 --- [SpringBootRestAPI] [RMI TCP Connection(17)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2026-03-04T16:50:45.331+05:30  INFO 29088 --- [SpringBootRestAPI] [RMI TCP Connection(17)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SPRINGBOOTRESTAPI/WKSBAN22BTR0007.corp.mphasis.com:SpringBootRestAPI:7788 - deregister  status: 200
+2026-03-04T16:50:45.331+05:30  INFO 29088 --- [SpringBootRestAPI] [RMI TCP Connection(17)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient

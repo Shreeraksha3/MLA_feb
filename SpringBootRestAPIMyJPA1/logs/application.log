@@ -484,3 +484,51 @@ Caused by: org.hibernate.query.sqm.UnknownEntityException: Could not resolve roo
 	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:1002) ~[hibernate-core-7.2.4.Final.jar:7.2.4.Final]
 	... 88 common frames omitted
 
+2026-02-28T15:00:32.157+05:30  INFO 23720 --- [SpringBootRestAPIMyJPA1] [restartedMain] c.t.SpringBootRestApiMyJpa1Application   : Starting SpringBootRestApiMyJpa1Application using Java 25.0.1 with PID 23720 (C:\Users\shreeraksha.h\Desktop\MLA-JAVA\SpringBootRestAPIMyJPA1\target\classes started by shreeraksha.h in C:\Users\shreeraksha.h\Desktop\MLA-JAVA\SpringBootRestAPIMyJPA1)
+2026-02-28T15:00:32.161+05:30  INFO 23720 --- [SpringBootRestAPIMyJPA1] [restartedMain] c.t.SpringBootRestApiMyJpa1Application   : No active profile set, falling back to 1 default profile: "default"
+2026-02-28T15:00:32.205+05:30  INFO 23720 --- [SpringBootRestAPIMyJPA1] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-02-28T15:00:32.205+05:30  INFO 23720 --- [SpringBootRestAPIMyJPA1] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-02-28T15:00:33.178+05:30  INFO 23720 --- [SpringBootRestAPIMyJPA1] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-28T15:00:33.231+05:30  INFO 23720 --- [SpringBootRestAPIMyJPA1] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 45 ms. Found 1 JPA repository interface.
+2026-02-28T15:00:33.757+05:30  INFO 23720 --- [SpringBootRestAPIMyJPA1] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 7799 (http)
+2026-02-28T15:00:33.770+05:30  INFO 23720 --- [SpringBootRestAPIMyJPA1] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-28T15:00:33.770+05:30  INFO 23720 --- [SpringBootRestAPIMyJPA1] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-02-28T15:00:33.836+05:30  INFO 23720 --- [SpringBootRestAPIMyJPA1] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1631 ms
+2026-02-28T15:00:34.071+05:30  INFO 23720 --- [SpringBootRestAPIMyJPA1] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-02-28T15:00:34.118+05:30  INFO 23720 --- [SpringBootRestAPIMyJPA1] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.4.Final
+2026-02-28T15:00:34.520+05:30  INFO 23720 --- [SpringBootRestAPIMyJPA1] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-28T15:00:34.549+05:30  INFO 23720 --- [SpringBootRestAPIMyJPA1] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-02-28T15:00:34.874+05:30  INFO 23720 --- [SpringBootRestAPIMyJPA1] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@db4c0f5
+2026-02-28T15:00:34.875+05:30  INFO 23720 --- [SpringBootRestAPIMyJPA1] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-02-28T15:00:34.954+05:30  INFO 23720 --- [SpringBootRestAPIMyJPA1] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/mlafeb]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.42
+	Default catalog/schema: mlafeb/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-28T15:00:35.633+05:30  INFO 23720 --- [SpringBootRestAPIMyJPA1] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-28T15:00:35.683+05:30  INFO 23720 --- [SpringBootRestAPIMyJPA1] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-28T15:00:35.753+05:30  INFO 23720 --- [SpringBootRestAPIMyJPA1] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-02-28T15:00:36.324+05:30  WARN 23720 --- [SpringBootRestAPIMyJPA1] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-28T15:00:36.995+05:30  INFO 23720 --- [SpringBootRestAPIMyJPA1] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 13 endpoints beneath base path '/actuator'
+2026-02-28T15:00:37.075+05:30  INFO 23720 --- [SpringBootRestAPIMyJPA1] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 7799 (http) with context path '/'
+2026-02-28T15:00:37.082+05:30  INFO 23720 --- [SpringBootRestAPIMyJPA1] [restartedMain] c.t.SpringBootRestApiMyJpa1Application   : Started SpringBootRestApiMyJpa1Application in 5.297 seconds (process running for 6.177)
+2026-02-28T15:00:37.089+05:30  WARN 23720 --- [SpringBootRestAPIMyJPA1] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-02-28T15:00:37.089+05:30  WARN 23720 --- [SpringBootRestAPIMyJPA1] [restartedMain] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-02-28T15:00:37.781+05:30  INFO 23720 --- [SpringBootRestAPIMyJPA1] [RMI TCP Connection(4)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-28T15:00:37.781+05:30  INFO 23720 --- [SpringBootRestAPIMyJPA1] [RMI TCP Connection(4)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-02-28T15:00:37.783+05:30  INFO 23720 --- [SpringBootRestAPIMyJPA1] [RMI TCP Connection(4)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-02-28T15:00:50.936+05:30  INFO 23720 --- [SpringBootRestAPIMyJPA1] [http-nio-7799-exec-9] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 288 ms
+2026-02-28T15:03:41.281+05:30  WARN 23720 --- [SpringBootRestAPIMyJPA1] [http-nio-7799-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.NullPointerException: Cannot invoke "java.util.List.size()" because "list" is null]
+2026-02-28T17:47:43.130+05:30  INFO 23720 --- [SpringBootRestAPIMyJPA1] [RMI TCP Connection(172)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2026-02-28T17:47:43.224+05:30  INFO 23720 --- [SpringBootRestAPIMyJPA1] [RMI TCP Connection(172)-127.0.0.1] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-28T17:47:43.270+05:30  INFO 23720 --- [SpringBootRestAPIMyJPA1] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-02-28T17:47:43.383+05:30  INFO 23720 --- [SpringBootRestAPIMyJPA1] [RMI TCP Connection(172)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-28T17:47:43.417+05:30  INFO 23720 --- [SpringBootRestAPIMyJPA1] [RMI TCP Connection(172)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-02-28T17:47:43.422+05:30  INFO 23720 --- [SpringBootRestAPIMyJPA1] [RMI TCP Connection(172)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

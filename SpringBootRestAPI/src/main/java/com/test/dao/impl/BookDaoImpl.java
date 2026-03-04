@@ -43,8 +43,8 @@ public class BookDaoImpl implements BookDao{
 
 	@Override
 	public List<Book> getAllBooks() {
-		// TODO Auto-generated method stub
-		return null;
+		
+		return repository.findAll();
 	}
 	
 	
